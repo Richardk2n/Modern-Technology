@@ -1,18 +1,24 @@
 package com.richard.modernTechnology;
 
+import com.richard.modernTechnology.proxy.IProxy;
+import com.richard.modernTechnology.reference.Reference;
+
 import cpw.mods.fml.common.Mod;
+import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.Mod.Instance;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 
-@Mod(modid = "ModernTechnology", name = "Modern Technology", version="1.7.10-1.0")
+@Mod(modid = Reference.MOD_ID, name = Reference.MOD_Name, version= Reference.VERSION)
 
 public class ModernTechnology {
 	
-	@Instance("ModernTechnology")
+	@Instance(Reference.MOD_ID)
 	public static ModernTechnology instance;
 	
+	@SidedProxy(clientSide = Reference.CLIENT_PROXY_CLASS, serverSide = Reference.SERVER_PROXY_CLASS)
+	public static IProxy proxy;
 	
 	//Items + Blocks
 	@Mod.EventHandler
