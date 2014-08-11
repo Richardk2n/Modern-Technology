@@ -1,5 +1,5 @@
 package com.richard.modernTechnology.proxy;
 
-public class CommonProxy {
+public abstract class CommonProxy implements IProxy{
 
 }
