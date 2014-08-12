@@ -1,6 +1,7 @@
 package com.richard.modernTechnology;
 
 import com.richard.modernTechnology.handler.ConfigurationHandler;
+import com.richard.modernTechnology.init.ModBlocks;
 import com.richard.modernTechnology.init.ModItems;
 import com.richard.modernTechnology.proxy.IProxy;
 import com.richard.modernTechnology.reference.Reference;
@@ -31,6 +32,7 @@ public class ModernTechnology {
 		FMLCommonHandler.instance().bus().register(new ConfigurationHandler());
 		
 		ModItems.init();
+		ModBlocks.init();
 		
 		LogHelper.info("Pre Initialization Complete!");
 	}
