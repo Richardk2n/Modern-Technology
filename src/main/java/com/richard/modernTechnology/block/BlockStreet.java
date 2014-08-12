@@ -1,5 +1,7 @@
 package com.richard.modernTechnology.block;
 
+import net.minecraft.creativetab.CreativeTabs;
+
 public class BlockStreet extends BlockModernTechnology{
 
 	public BlockStreet(){
@@ -10,5 +12,6 @@ public class BlockStreet extends BlockModernTechnology{
 		this.setResistance(20F);
 		this.setHarvestLevel("pickaxe", 0);
 		this.setLightLevel(10);
+		this.setCreativeTab(CreativeTabs.tabAllSearch);
 	}
 }
