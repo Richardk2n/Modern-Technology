@@ -1,8 +1,11 @@
 package com.richard.modernTechnology;
 
+import net.minecraftforge.oredict.OreDictionary;
+
 import com.richard.modernTechnology.handler.ConfigurationHandler;
 import com.richard.modernTechnology.init.ModBlocks;
 import com.richard.modernTechnology.init.ModItems;
+import com.richard.modernTechnology.init.Recipes;
 import com.richard.modernTechnology.proxy.IProxy;
 import com.richard.modernTechnology.reference.Reference;
 import com.richard.modernTechnology.utility.LogHelper;
@@ -40,6 +43,8 @@ public class ModernTechnology {
 	//Guis + TileEntitys + Crafting
 	@Mod.EventHandler
 	public void init(FMLInitializationEvent event){
+		Recipes.init();
+		
 		LogHelper.info("Initialization Complete!");
 		
 	}
@@ -47,6 +52,12 @@ public class ModernTechnology {
 	//Wrap up + after other mods
 	@Mod.EventHandler
 	public void postInit(FMLPostInitializationEvent event){
+		
+		for(String oreName: OreDictionary.getOreNames()){
+			LogHelper.info(oreName);
+			LogHelper.info(OreDictionary.getOres(oreName));
+		}
+		
 		LogHelper.info("Post Initialization Complete!");
 		
 	}
