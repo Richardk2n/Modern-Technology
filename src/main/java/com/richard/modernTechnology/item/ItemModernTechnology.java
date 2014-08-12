@@ -1,5 +1,6 @@
 package com.richard.modernTechnology.item;
 
+import com.richard.modernTechnology.creativeTab.CreativeTabModernTechnology;
 import com.richard.modernTechnology.reference.Reference;
 
 import cpw.mods.fml.relauncher.Side;
@@ -12,6 +13,7 @@ public class ItemModernTechnology extends Item{
 
 	public ItemModernTechnology(){
 		super();
+		this.setCreativeTab(CreativeTabModernTechnology.MODERNTECHNOLOGY_TAB);
 	}
 	
 	@Override
