@@ -53,10 +53,10 @@ public class ModernTechnology {
 	@Mod.EventHandler
 	public void postInit(FMLPostInitializationEvent event){
 		
-		for(String oreName: OreDictionary.getOreNames()){
+		/*for(String oreName: OreDictionary.getOreNames()){
 			LogHelper.info(oreName);
 			LogHelper.info(OreDictionary.getOres(oreName));
-		}
+		}*/
 		
 		LogHelper.info("Post Initialization Complete!");
 		
