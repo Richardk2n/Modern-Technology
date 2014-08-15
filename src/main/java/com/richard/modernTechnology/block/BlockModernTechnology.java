@@ -1,6 +1,6 @@
 package com.richard.modernTechnology.block;
 
-import com.richard.modernTechnology.creativeTab.CreativeTabModernTechnology;
+import com.richard.modernTechnology.creativeTabs.CreativeTabsModernTechnology;
 import com.richard.modernTechnology.reference.Reference;
 
 import cpw.mods.fml.relauncher.Side;
@@ -18,7 +18,7 @@ public class BlockModernTechnology extends Block{
 	
 	public BlockModernTechnology(){
 		this(Material.rock);
-		this.setCreativeTab(CreativeTabModernTechnology.MODERNTECHNOLOGY_TAB);
+		this.setCreativeTab(CreativeTabsModernTechnology.MODERNTECHNOLOGY_TAB);
 	}
 
 	@Override

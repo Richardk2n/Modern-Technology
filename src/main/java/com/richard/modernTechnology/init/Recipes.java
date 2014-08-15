@@ -5,6 +5,7 @@ import com.richard.modernTechnology.block.BlockStreet;
 import com.richard.modernTechnology.utility.NBTHelper;
 
 import net.minecraft.init.Blocks;
+import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTBase;
 import net.minecraft.nbt.NBTTagCompound;
@@ -29,5 +30,7 @@ public class Recipes {
 		GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.BlockStreet), new ItemStack(ModItems.stickStone), new ItemStack(ModItems.stickStone), new ItemStack(ModItems.stickStone), new ItemStack(ModItems.stickStone));
 	
 		GameRegistry.addRecipe(new ShapelessOreRecipe(stick, "stone", "stone"));
+		
+		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModBlocks.BlockStoneTorch), new ItemStack(ModItems.stickStone),new ItemStack(Items.coal)));
 	}
 }

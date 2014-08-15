@@ -1,3 +1,6 @@
 item.moderntechnology:StickStone.name=Stone Stick
+
 tile.moderntechnology:BlockStreet.name=Street Block
+tile.moderntechnology:BlockTorchStone.name=Stone Torch
+
 itemGroup.moderntechnology=Modern Technology

@@ -1,6 +1,6 @@
 package com.richard.modernTechnology.item;
 
-import com.richard.modernTechnology.creativeTab.CreativeTabModernTechnology;
+import com.richard.modernTechnology.creativeTabs.CreativeTabsModernTechnology;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
