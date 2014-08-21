@@ -1,6 +1,14 @@
+#Keys
+keys.moderntechnology.category=Modern Technology
+keys.moderntechnology.charge=Charge
+keys.moderntechnology.release=Release
+	
+#Creative Tabs
+itemGroup.moderntechnology=Modern Technology
+
+#Items
 item.moderntechnology:StickStone.name=Stone Stick
 
+#Blocks
 tile.moderntechnology:BlockStreet.name=Street Block
 tile.moderntechnology:BlockTorchStone.name=Stone Torch
-
-itemGroup.moderntechnology=Modern Technology

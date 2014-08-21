@@ -2,6 +2,7 @@ package com.richard.modernTechnology;
 
 import net.minecraftforge.oredict.OreDictionary;
 
+import com.richard.modernTechnology.client.handler.KeyInputEventHandler;
 import com.richard.modernTechnology.handler.ConfigurationHandler;
 import com.richard.modernTechnology.init.ModBlocks;
 import com.richard.modernTechnology.init.ModItems;
@@ -34,6 +35,8 @@ public class ModernTechnology {
 		ConfigurationHandler.init(event.getSuggestedConfigurationFile());
 		FMLCommonHandler.instance().bus().register(new ConfigurationHandler());
 		
+		proxy.registerKeyBindings();
+		
 		ModItems.init();
 		ModBlocks.init();
 		
@@ -43,6 +46,8 @@ public class ModernTechnology {
 	//Guis + TileEntitys + Crafting
 	@Mod.EventHandler
 	public void init(FMLInitializationEvent event){
+		FMLCommonHandler.instance().bus().register(new KeyInputEventHandler());
+		
 		Recipes.init();
 		
 		LogHelper.info("Initialization Complete!");
