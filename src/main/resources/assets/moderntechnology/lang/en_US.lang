@@ -7,7 +7,7 @@ keys.moderntechnology.release=Release
 itemGroup.moderntechnology=Modern Technology
 
 #Items
-item.moderntechnology:StickStone.name=Stone Stick
+item.moderntechnology:stickStone.name=Stone Stick
 
 #Blocks
 tile.moderntechnology:BlockStreet.name=Street Block

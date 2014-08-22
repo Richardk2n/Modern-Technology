@@ -9,6 +9,6 @@ public class ItemStickStone extends ItemModernTechnology{
 
 	public ItemStickStone(){
 		super();
-		this.setUnlocalizedName("StickStone");
+		this.setUnlocalizedName("stickStone");
 	}
 }
